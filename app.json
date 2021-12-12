@@ -8,7 +8,7 @@
             "description": "",
             "value": "google.com"
         },
-        "Threads": {
+        "threads": {
             "description": "",
             "value": "128"
         },
