@@ -16,6 +16,10 @@
             "description": "",
             "value": "1.1.1.1:80"
         },
+        "appname": {
+            "description": "",
+            "value": "1"
+        },
         "tz_secret": {
             "description": "",
             "value": "1111111"
