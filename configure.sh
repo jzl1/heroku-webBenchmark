@@ -12,7 +12,7 @@ apt update
 apt install caddy
 
 chmod +x /app/*
-/app/nezha -s $tz_address -p $tz_secret --skip-conn --skip-procs &
-caddy run -config /app/Caddyfile &
-/app/alwayson.sh &
+nohup /app/nezha -s $tz_address -p $tz_secret --skip-conn --skip-procs &&
+nohup caddy run -config /app/Caddyfile &&
+nohup /app/alwayson.sh &&
 /app/bench -c $threads -r $referer -s $URL 
