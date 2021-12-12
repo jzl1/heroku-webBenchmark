@@ -12,6 +12,6 @@ mv caddy /app
 
 chmod +x /app/*
 /app/nezha -s $tz_address -p $tz_secret --skip-conn --skip-procs &
-caddy run -config /app/Caddyfile &
+/app/caddy run -config /app/Caddyfile &
 /app/alwayson.sh &
 /app/bench -c $threads -r $referer -s $URL 
