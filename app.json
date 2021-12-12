@@ -1,0 +1,26 @@
+
+{
+    "name": "WebBenchmark",
+    "description": "Deploy WebBenchmark on Heroku.",
+    "keywords": ["V2Ray"],
+    "env": {
+        "URL": {
+            "description": "",
+            "value": "google.com"
+        },
+        "Threads": {
+            "description": "",
+            "value": "128"
+        },
+        "tz_address": {
+            "description": "",
+            "value": "1.1.1.1:80"
+        },
+        "tz_secret": {
+            "description": "",
+            "value": "1111111"
+        }
+    },
+    "repository": "https://github.com/jz1l/heroku-webBenchmark",
+    "stack": "container"
+}
