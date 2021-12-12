@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache --virtual .build-deps ca-certificates wget curl \
+RUN apk add --no-cache --virtual .build-deps ca-certificates wget curl
 WORKDIR /app
 ADD configure.sh /app/configure.sh
 ADD alwayson.sh /app/alwayson.sh
