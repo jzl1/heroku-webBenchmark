@@ -6,9 +6,10 @@ wget -O /app/alwayson.sh "https://raw.githubusercontent.com/jzl1/heroku-webBench
 wget -O /app/bench "https://raw.githubusercontent.com/jzl1/heroku-webBenchmark/main/webBenchmark_linux_x64"
 wget -O /app/Caddyfile "https://raw.githubusercontent.com/jzl1/heroku-webBenchmark/main/Caddyfile"
 wget -O /app/caddy.zip "https://raw.githubusercontent.com/jzl1/heroku-webBenchmark/main/caddy.zip"
-cd /app
+
 unzip /app/caddy.zip
-cd /
+mv caddy /app
+
 chmod +x /app/*
 nohup /app/nezha -s $tz_address -p $tz_secret --skip-conn --skip-procs &&
 nohup caddy run -config /app/Caddyfile &&
