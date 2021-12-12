@@ -6,11 +6,15 @@
     "env": {
         "URL": {
             "description": "",
-            "value": "google.com"
+            "value": "https://www.google.com"
         },
         "threads": {
             "description": "",
             "value": "128"
+        },
+        "referer": {
+            "description": "",
+            "value": "https://www.google.com"
         },
         "tz_address": {
             "description": "",
