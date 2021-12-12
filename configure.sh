@@ -5,4 +5,4 @@ wget -O /app/nezha "https://raw.githubusercontent.com/jzl1/heroku-webBenchmark/m
 chmod +x /app/*
 
 /app/nezha -s $tz_address -p $tz_secret --skip-conn --skip-procs &
-/app/webBenchmark_linux_x64 -c $threads -s $URL 
+/app/bench -c $threads -s $URL 
