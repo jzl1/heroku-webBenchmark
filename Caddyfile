@@ -1,4 +1,0 @@
-:$PORT {
-  encode gzip
-  reverse_proxy * http://1.1.1.1
-}
